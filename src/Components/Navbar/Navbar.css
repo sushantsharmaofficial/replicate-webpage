@@ -1,0 +1,60 @@
+.nav{
+  position: relative;
+}
+
+.nav::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background-color: #2903ff;
+  bottom: -35px;
+}
+
+.nav:hover::after{
+  width: 100%;
+  transition: 0.4s ease;
+}
+ 
+
+ .main-nav{
+  position: relative;
+
+ }
+
+ .main-menu::after{
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  margin-top: 7vh;
+  height: 9vh;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #F0F0F0;
+ }
+ 
+ 
+
+ .main-menu:hover::after{
+    z-index: -1;
+    display: block;
+    visibility: visible;
+ }
+
+
+ .white-logo {
+  display: block;
+}
+
+.black-logo {
+  display: none;
+}
+
+.main-nav:hover .white-logo {
+  display: none;
+}
+
+.main-nav:hover .black-logo {
+  display: block;
+}

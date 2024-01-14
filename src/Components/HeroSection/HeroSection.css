@@ -1,0 +1,46 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.bg-fade-in {
+  animation: fadeIn  5s linear infinite  ;
+}
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+ 
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.bg-fade-body {
+  animation: fadeOut  5s linear infinite ;
+}
+
+
+.middle-toggle{
+  animation: rotateIcon 10s linear infinite;
+}
+
+@keyframes rotateIcon {
+  from { transform: rotate(0deg);}
+  to{ transform: rotate(360deg);}
+}
+ 
+
+
+ 
