@@ -26,8 +26,9 @@
   content: "";
   visibility: hidden;
   position: absolute;
-  margin-top: 7vh;
-  height: 9vh;
+  overflow: hidden;
+  margin-top: 60px;
+  height: 80px;
   width: 100%;
   left: 0;
   right: 0;
@@ -37,6 +38,7 @@
  
 
  .main-menu:hover::after{
+   overflow: hidden;
     z-index: -1;
     display: block;
     visibility: visible;
