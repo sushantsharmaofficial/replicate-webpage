@@ -18,10 +18,10 @@ export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
         <p className=" text-4xl lg:text-[70px]  font-Inter font-extrabold bg-fade-in text-white ">
           {heroData.title1}
         </p>
-        <p className="text-4xl lg:text-[70px] relative  font-Inter font-extrabold bg-fade-in text-white">
+        <p className="text-4xl  lg:text-[70px] relative  font-Inter font-extrabold bg-fade-in text-white">
           {heroData.title2}
         </p>
-        <div className="line border-b-[10px]  right-0 bottom-0 w-[220px] lg:w-[540px] lg:-mb-6  absolute z-[-1] border-[#37fcf2]"></div>
+        <div className="line bg-Line-in border-b-[10px] left-0   right-0 bottom-0 w-[220px] lg:w-[540px] lg:-mb-6  absolute z-[-1] border-[#37fcf2]"></div>
       </div>
       <div className="hero-body items-center justify-center min-h-fit max-w-fit mx-auto mt-5">
         <p className=" text-[20px] lg:text-[38px]  text-center leading-[32px]  lg:leading-[48px] bg-fade-body font-light text-white">
@@ -34,7 +34,7 @@ export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
           {heroData.body3}
         </p>
       </div>
-      <div className="bottom-part flex gap-[80vh] items-center    absolute bottom-[80px] left-0 right-0 lg:left-[70px] right-[40px]">
+      <div className="bottom-part flex gap-[80vh] items-center    absolute bottom-[80px] left-0 right-0 lg:left-[70px] lg:right-[40px]">
         <div className="icons max-w-[40vh] mx-auto lg:w-full lg:mx-0   lg:ml-0 flex gap-2 text-white items-center">
           <button onClick={() => setHeroCount(0)}>
             {heroCount === 1 ? (

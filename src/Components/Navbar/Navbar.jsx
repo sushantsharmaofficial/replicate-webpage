@@ -79,12 +79,8 @@ export const Navbar = () => {
   ]);
   const [open, setOpen] = React.useState(false);
 
-  const toggleOpenMenu = () => {
-    setOpen(true);
-  };
-
-  const toggleCloseMenu = () => {
-    setOpen(false);
+  const toggleMenu = () => {
+    setOpen(!open);
   };
 
   // animation of toggle menu
@@ -113,7 +109,7 @@ export const Navbar = () => {
         <ul className="main-menu flex gap-32 ">
           {navElem.map((element) => (
             <li
-              className="nav hidden relative font-Inter lg:block text-[20px] font-semibold group "
+              className="nav hidden relative  font-Inter lg:block text-[20px] font-semibold group "
               key={element}
               onMouseOver={() => {
                 setNavElem((prev) =>
@@ -133,13 +129,13 @@ export const Navbar = () => {
               <a href="#">{element.name}</a>
 
               {element.sub && element.active && (
-                <div className="z-50">
+                <div className="z-50 ">
                   <div className="max-w-[100%]">
                     <div className="   ">
-                      <div className=" absolute font-Inter  justify-start  items-center w-[90vh] h-[10vh] p-5.5 lg:flex gap-10">
+                      <div className=" absolute font-Inter  justify-start pt-12     items-center w-[680px] h-[10vh] p-5.5 lg:flex gap-10">
                         {element.sub.map((sub) => (
                           <a
-                            className=" text-black text-[16px]"
+                            className=" text-black hover:text-blue-700 text-[16px]"
                             href="#"
                             key={sub.id}
                           >
@@ -164,34 +160,37 @@ export const Navbar = () => {
             animate={{ height: "100vh", opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             exit={{ opacity: 0, height: 0 }}
-            className="bg-white  z-20  py-5 absolute w-full overflow-hidden h-[98vh] top-0 left-0 bottom-0 "
+            className="bg-white  z-20 py-5 lg:py-8 absolute w-full overflow-hidden h-[98vh]  top-0 left-0 bottom-0 "
           >
-            <div className=" flex justify-between px-5 mt-3 mb-36 items-center px-2">
+            <div className=" flex justify-between   lg:mb-36 mb-14 items-center px-5">
               <div className="logo">
                 <img src={logo2} className="h-7 lg:h-10" alt="logo" />
               </div>
-              <div onClick={toggleCloseMenu}>
+              <div onClick={toggleMenu}>
                 <ImCross className=" text-3xl text-black cursor-pointer" />
               </div>
             </div>
-            <ul className=" md:flex md:justify-between md:px-28  ml-8  h-screen w-full  gap-5">
-              {NavElem.map((element) => (
+            <ul className=" md:flex md:gap-44  md:px-64  ml-5 px-2  h-screen w-full  gap-5">
+              {navElem.map((element) => (
                 <li
-                  className="mb-10 leading-[40px] font-Inter lg:block text-[20px] font-light   "
+                  className="mb-8 lg:mb-10 leading-[36px] lg:leading-[40px] font-Inter lg:block text-[20px]    "
                   key={element.id}
                 >
                   <a
-                    className="text-2xl mb- font-Inter relative font-semibold text-black "
+                    className="text-xl   lg:text-4xl font-extrabold   font-Inter relative  text-black "
                     href="#"
                   >
                     {element.name}
                   </a>
                   <div className=" w-36 h-[5px] -mt-2 bg-[#37fcf2]"></div>
-                  <ul>
+                  <ul className="mt-1 lg:mt-16">
                     {element.sub.map((sub) => (
-                      <li className="  font-Inter text-black" key={sub.id}>
+                      <li
+                        className="  font-Inter font-light text-black"
+                        key={sub.id}
+                      >
                         <a
-                          className=" hover:text-blue-700 hover:text-[21px] hover:underline underline-offset-4"
+                          className=" hover:text-blue-700 hover:text-[21px] text-[16px] lg:text-[20px]  hover:underline underline-offset-4"
                           href="#"
                         >
                           {sub.subname}
@@ -208,7 +207,7 @@ export const Navbar = () => {
 
       {/* toggle menu */}
 
-      <div onClick={toggleOpenMenu}>
+      <div onClick={toggleMenu}>
         <FiMenu className="text-4xl cursor-pointer" />
       </div>
     </nav>
