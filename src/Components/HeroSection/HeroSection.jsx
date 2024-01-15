@@ -7,7 +7,6 @@ import { FaPause } from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { AiFillMessage } from "react-icons/ai";
-import { FaDharmachakra } from "react-icons/fa";
 import { GoArrowUp } from "react-icons/go";
 import { BsDot } from "react-icons/bs";
 import { FaChevronDown } from "react-icons/fa6";
@@ -69,7 +68,6 @@ export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
           <div className=" absolute ml-[8px] mt-1">
             <FaChevronDown />
           </div>
-          {/* <FaDharmachakra size={50} /> */}
         </div>
       </div>
       <div className="chat z-[-1] absolute gap-4 bottom-10 right-5 flex flex-col  shadow-lg  items-center ">
