@@ -54,10 +54,16 @@ export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
           <button onClick={() => setPlay(!play)}>
             {play ? <FaPlay size={15} /> : <FaPause size={15} />}
           </button>
-          <button onClick={() => setHeroCount((prev) => (prev === 1 ? 0 : 1))}>
+          <button
+            className="hidden md:block"
+            onClick={() => setHeroCount((prev) => (prev === 1 ? 0 : 1))}
+          >
             <IoIosArrowBack size={18} />
           </button>
-          <button onClick={() => setHeroCount((prev) => (prev === 1 ? 0 : 1))}>
+          <button
+            className="hidden md:block"
+            onClick={() => setHeroCount((prev) => (prev === 1 ? 0 : 1))}
+          >
             <IoIosArrowForward size={18} />
           </button>
         </div>
