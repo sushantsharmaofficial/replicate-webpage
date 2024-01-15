@@ -28,7 +28,7 @@ function App() {
       {
         heroCount === 0 ? setHeroCount(1) : setHeroCount(0);
       }
-    }, 5000);
+    }, 6000);
     return () => clearTimeout(timer);
   }, [heroCount]);
 
