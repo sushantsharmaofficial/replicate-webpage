@@ -81,7 +81,7 @@ export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
           className="text-blue-800  bg-white h-12 w-12  p-2 rounded-2xl"
           size={30}
         />
-        <GoArrowUp className=" bg-white h-12 w-12 rounded-2xl" size={10} />
+        <GoArrowUp className=" bg-white h-12 w-12 rounded-2xl" size={5} />
       </div>
     </div>
   );
