@@ -65,7 +65,7 @@ export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
           <div className="border px-[7px] py-[12px] p rounded-3xl">
             <BsDot className="dot" />
           </div>
-          <div className=" absolute ml-[8px] mt-1">
+          <div className=" absolute ml-[7px] mt-1">
             <FaChevronDown />
           </div>
         </div>
