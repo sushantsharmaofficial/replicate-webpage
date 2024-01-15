@@ -78,10 +78,13 @@ export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
       </div>
       <div className="chat z-[-1] absolute gap-4 bottom-10 right-5 flex flex-col  shadow-lg  items-center ">
         <AiFillMessage
-          className="text-blue-800  bg-white h-12 w-12  p-2 rounded-2xl"
+          className="text-blue-800  bg-white h-12 w-12 lg:h-14 lg:w-14 p-2 rounded-2xl"
           size={30}
         />
-        <GoArrowUp className=" bg-white h-12 w-12 rounded-2xl" size={5} />
+        <GoArrowUp
+          className=" bg-white h-12 w-12 lg:h-14 lg:w-14 rounded-2xl"
+          size={5}
+        />
       </div>
     </div>
   );
