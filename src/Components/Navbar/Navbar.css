@@ -19,6 +19,7 @@
 
  .main-nav{
   position: relative;
+  
 
  }
 
@@ -27,8 +28,9 @@
   visibility: hidden;
   position: absolute;
   overflow: hidden;
-  margin-top: 60px;
-  height: 80px;
+  margin-top: 30px;
+  z-index: -1;
+  height: 100px;
   width: 100%;
   left: 0;
   right: 0;

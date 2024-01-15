@@ -11,7 +11,7 @@ import { FaDharmachakra } from "react-icons/fa";
 import { GoArrowUp } from "react-icons/go";
 
 export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
-  const [play, setPlay] = useState(0);
+  const [play, setPlay] = useState(true);
   return (
     <div className="header-section mt-[30vh] lg:mt-[28vh]">
       <div className="title flex h-fit  hero-title relative max-w-fit gap-4 mx-auto mb-5 lg:mb-14 z-[-1]">

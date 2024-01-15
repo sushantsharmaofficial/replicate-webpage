@@ -98,7 +98,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="main-nav   flex relative  hover:bg-white hover:text-black h-10 lg:h-[11vh] px-5 py-7 border-b-[1px] z-0 justify-between items-center text-white ">
+    <nav className="main-nav shadow-sm   flex relative  hover:bg-white hover:text-black h-10 lg:h-[11vh] px-5 py-7 border-b-[1px]  justify-between items-center text-white ">
       <div className="logo relative ">
         <img src={logo} className="white-logo   h-7 lg:h-10 " alt="logo" />
         <img src={logo2} className="black-logo   h-7 lg:h-10 " alt="logo" />
