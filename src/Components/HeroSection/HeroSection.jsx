@@ -21,8 +21,8 @@ export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
         </p>
         <p className="text-4xl  lg:text-[70px] relative  font-Inter font-extrabold bg-fade-in text-white">
           {heroData.title2}
+          <div className="line  bg-Line-in border-b-[10px] left-0   right-0 bottom-0 w-[220px] lg:w-[540px] lg:-mb-6  absolute z-[-1] border-[#37fcf2]"></div>
         </p>
-        <div className="line bg-Line-in border-b-[10px] left-0   right-0 bottom-0 w-[220px] lg:w-[540px] lg:-mb-6  absolute z-[-1] border-[#37fcf2]"></div>
       </div>
       <div className="hero-body items-center justify-center min-h-fit max-w-fit mx-auto mt-5">
         <p className=" text-[20px] lg:text-[38px]  text-center leading-[32px]  lg:leading-[48px] bg-fade-body font-light text-white">
