@@ -170,7 +170,7 @@ export const Navbar = () => {
                 <ImCross className=" text-3xl text-black cursor-pointer" />
               </div>
             </div>
-            <ul className=" md:flex md:gap-44  md:px-64  ml-5 px-2  h-screen w-full  gap-5">
+            <ul className=" md:flex md:gap-44  md:px-56  ml-5 px-2 min-w-[680px]  h-screen w-full  gap-5">
               {navElem.map((element) => (
                 <li
                   className="mb-8 lg:mb-10 leading-[36px] lg:leading-[40px] font-Inter lg:block text-[20px]    "
