@@ -129,21 +129,17 @@ export const Navbar = () => {
               <a href="#">{element.name}</a>
 
               {element.sub && element.active && (
-                <div className="z-50 ">
-                  <div className="max-w-[100%]">
-                    <div className="   ">
-                      <div className=" absolute font-Inter  justify-start pt-12     items-center w-[680px] h-[10vh] p-5.5 lg:flex gap-10">
-                        {element.sub.map((sub) => (
-                          <a
-                            className=" text-black hover:text-blue-700 text-[16px]"
-                            href="#"
-                            key={sub.id}
-                          >
-                            {sub.subname}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
+                <div className="max-w-[100%]">
+                  <div className=" absolute font-Inter  justify-start pt-12     items-center w-[680px] h-[10vh] p-5.5 lg:flex gap-10">
+                    {element.sub.map((sub) => (
+                      <a
+                        className=" text-black hover:text-blue-700 text-[16px]"
+                        href="#"
+                        key={sub.id}
+                      >
+                        {sub.subname}
+                      </a>
+                    ))}
                   </div>
                 </div>
               )}
