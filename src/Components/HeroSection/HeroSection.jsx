@@ -36,7 +36,7 @@ export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
         </p>
       </div>
       <div className="bottom-part flex gap-[80vh] items-center h-[60px] max-w-[1000px]   absolute bottom-[80px] left-0 right-0 lg:left-[70px] lg:right-[40px]">
-        <div className="icons max-w-[40vh] mx-auto lg:w-full lg:mx-0   lg:ml-0 flex gap-2 text-white items-center">
+        <div className="icons max-w-[40vh] mx-auto lg:w-full lg:mx-0   lg:ml-0 flex gap-3 text-white items-center">
           <button onClick={() => setHeroCount(0)}>
             {heroCount === 1 ? (
               <GoDotFill className=" text-gray-500" size={18} />
