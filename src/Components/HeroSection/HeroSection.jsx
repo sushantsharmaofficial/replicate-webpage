@@ -9,6 +9,8 @@ import { IoIosArrowForward } from "react-icons/io";
 import { AiFillMessage } from "react-icons/ai";
 import { FaDharmachakra } from "react-icons/fa";
 import { GoArrowUp } from "react-icons/go";
+import { BsDot } from "react-icons/bs";
+import { FaChevronDown } from "react-icons/fa6";
 
 export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
   const [play, setPlay] = useState(true);
@@ -34,7 +36,7 @@ export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
           {heroData.body3}
         </p>
       </div>
-      <div className="bottom-part flex gap-[80vh] items-center    absolute bottom-[80px] left-0 right-0 lg:left-[70px] lg:right-[40px]">
+      <div className="bottom-part flex gap-[80vh] items-center h-[60px] max-w-[1000px]   absolute bottom-[80px] left-0 right-0 lg:left-[70px] lg:right-[40px]">
         <div className="icons max-w-[40vh] mx-auto lg:w-full lg:mx-0   lg:ml-0 flex gap-2 text-white items-center">
           <button onClick={() => setHeroCount(0)}>
             {heroCount === 1 ? (
@@ -60,8 +62,14 @@ export const HeroSection = ({ heroData, heroCount, setHeroCount }) => {
             <IoIosArrowForward size={18} />
           </button>
         </div>
-        <div className="middle-toggle hidden -ml-[25vh] lg:block  text-white ">
-          <FaDharmachakra size={50} />
+        <div className="middle-toggle relative hidden min-w-[30px] -ml-[25vh]  lg:block  text-white ">
+          <div className="border px-[7px] py-[12px] p rounded-3xl">
+            <BsDot className="dot" />
+          </div>
+          <div className=" absolute ml-[8px] mt-1">
+            <FaChevronDown />
+          </div>
+          {/* <FaDharmachakra size={50} /> */}
         </div>
       </div>
       <div className="chat z-[-1] absolute gap-4 bottom-10 right-5 flex flex-col  shadow-lg  items-center ">

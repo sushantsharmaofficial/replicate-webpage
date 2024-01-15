@@ -32,13 +32,19 @@
 }
 
 
-.middle-toggle{
-  animation: rotateIcon 10s linear infinite;
+.dot{
+  animation: rotateIcon 2s linear infinite;
 }
 
 @keyframes rotateIcon {
-  from { transform: rotate(0deg);}
-  to{ transform: rotate(360deg);}
+  from { 
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{ 
+    opacity: 1;
+    transform: translateY(10px);
+  }
 }
  
 
