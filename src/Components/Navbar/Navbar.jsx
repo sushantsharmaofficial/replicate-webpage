@@ -202,7 +202,7 @@ export const Navbar = () => {
                         key={sub.id}
                       >
                         <a
-                          className=" hover:text-blue-700 tracking-tight hover:text-[21px] text-[15px] lg:text-[20px]   hover:underline underline-offset-4"
+                          className=" hover:text-blue-700 tracking-tight  text-[15px] lg:text-[20px]   hover:underline underline-offset-4"
                           href="#"
                         >
                           {sub.subname}
