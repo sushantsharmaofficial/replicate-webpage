@@ -169,11 +169,11 @@ export const Navbar = () => {
             <ul className=" md:flex md:gap-44  md:px-56  ml-5 px-2 min-w-[680px]  h-screen w-full  gap-5">
               {navElem.map((element) => (
                 <li
-                  className="mb-8 lg:mb-10 leading-[36px] lg:leading-[40px] font-Inter lg:block text-[20px]    "
+                  className="mb-8 lg:mb-10 leading-[36px] lg:leading-[40px]  lg:block text-[20px]    "
                   key={element.id}
                 >
                   <a
-                    className="text-xl   lg:text-4xl font-extrabold   font-Inter relative  text-black "
+                    className="text-xl   lg:text-4xl font-Inter font-boldest    relative  text-black "
                     href="#"
                   >
                     {element.name}
@@ -186,7 +186,7 @@ export const Navbar = () => {
                         key={sub.id}
                       >
                         <a
-                          className=" hover:text-blue-700 hover:text-[21px] text-[16px] lg:text-[20px]  hover:underline underline-offset-4"
+                          className=" hover:text-blue-700 hover:text-[21px] text-[16px] lg:text-[20px]   hover:underline underline-offset-4"
                           href="#"
                         >
                           {sub.subname}
