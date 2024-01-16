@@ -178,7 +178,7 @@ export const Navbar = () => {
                   >
                     {element.name}
                   </a>
-                  <div className=" w-36 h-[5px] -mt-2 bg-[#37fcf2]"></div>
+                  <div className=" w-36 lg:w-48 h-[8px] -mt-3 bg-[#37fcf2]"></div>
                   <ul className="mt-1 lg:mt-16">
                     {element.sub.map((sub) => (
                       <li
