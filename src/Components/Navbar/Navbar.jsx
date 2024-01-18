@@ -122,7 +122,7 @@ export const Navbar = () => {
           {navElem.map((element) => (
             <li
               className="nav hidden relative  font-Inter lg:block text-[20px] font-semibold group "
-              key={element.id}
+              key={element}
               onMouseOver={() => {
                 setNavElem((prev) =>
                   prev.map((item) =>
