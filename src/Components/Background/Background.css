@@ -1,6 +1,6 @@
  
 img{
-  animation: zoom 5s linear infinite ;
+  animation: zoom 5s linear forwards ;
 }
 
 @keyframes zoom {

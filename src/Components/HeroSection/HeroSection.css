@@ -10,7 +10,7 @@
 }
 
 .bg-fade-in {
-  animation: fadeIn  5s linear infinite  ;
+  animation: fadeIn  5s linear forwards  ;
 }
 
 
@@ -28,12 +28,12 @@
 }
 
 .bg-fade-body {
-  animation: fadeOut  5s linear infinite ;
+  animation: fadeOut  5s linear forwards ;
 }
 
 
 .dot{
-  animation: rotateIcon 2s linear infinite;
+  animation: rotateIcon 2s linear forwards;
 }
 
 @keyframes rotateIcon {
@@ -62,7 +62,7 @@
 }
 
 .bg-Line-in {
-  animation: LineIn  5s linear infinite  ;
+  animation: LineIn  5s linear forwards  ;
 }
 
  
